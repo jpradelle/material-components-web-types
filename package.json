@@ -1,0 +1,48 @@
+{
+  "name": "material-components-web-types",
+  "version": "0.1.0",
+  "license": "BSD-3-Clause",
+  "description": "Web-types for material-components",
+  "keywords": [
+    "web-types",
+    "material-components",
+    "material-web",
+    "completion",
+    "autocompletion"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpradelle/material-components-web-types.git"
+  },
+  "scripts": {
+    "clone": "git clone https://github.com/material-components/material-web.git || (cd material-web && git pull)",
+    "web-types-gen": "wca-webtypes 'material-web/packages/**/mwc-*.ts' --path-as-absolute --cwd material-web/packages --format webtypes --out-file ./src/gen/material-components-template-gen-web-types.json --webtypes-config='{\"name\": \"material-components-web-types\", \"version\": \"'$npm_package_version'\", \"default-icon\": \"icon/material.png\", \"description-markup\": \"markdown\", \"framework\": \"-\"}'",
+    "build": "npm run build:polymer; npm run build:lit",
+    "build:polymer": "export FW_NAME=polymer; export FRAMEWORK=@polymer/polymer; npm run build:generic",
+    "build:lit": "export FW_NAME=lit; export FRAMEWORK=lit; npm run build:generic",
+    "build:generic": "npm run build:copy; npm run build:update",
+    "build:copy": "cp src/gen/material-components-template-gen-web-types.json material-components-$FW_NAME-gen-web-types.json; cp src/material-components-template-extra-web-types.json material-components-$FW_NAME-extra-web-types.json",
+    "build:update": "replace-json-property ./material-components-$FW_NAME-gen-web-types.json framework \"$FRAMEWORK\" -s 4; replace-json-property ./material-components-$FW_NAME-extra-web-types.json framework \"$FRAMEWORK\" -s 2",
+    "bump": "npm run bump:polymer; npm run bump:lit",
+    "bump:polymer": "export FW_NAME=polymer; npm run bump:generic",
+    "bump:lit": "export FW_NAME=lit; npm run bump:generic",
+    "bump:generic": "replace-json-property ./material-components-$FW_NAME-gen-web-types.json version $npm_package_version -s 4; replace-json-property ./material-components-$FW_NAME-extra-web-types.json version $npm_package_version -s 2",
+    "version": "npm run build && npm run bump && git add *-web-types.json"
+  },
+  "devDependencies": {
+    "replace-json-property": "^1.8.0",
+    "web-component-analyzer-webtypes": "^2.0.2"
+  },
+  "web-types": [
+    "./material-components-lit-gen-web-types.json",
+    "./material-components-lit-extra-web-types.json",
+    "./material-components-polymer-gen-web-types.json",
+    "./material-components-polymer-extra-web-types.json"
+  ],
+  "files": [
+    "*.json",
+    "README.md",
+    "yarn.lock",
+    "icon/**"
+  ]
+}

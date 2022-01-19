@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json.schemastore.org/web-types",
+  "name": "material-components-extra-web-types",
+  "version": "0.1.0",
+  "default-icon": "icon/material.png",
+  "description-markup": "markdown",
+  "framework": "",
+  "contributions": {
+    "html": {
+      "attributes": [
+        {
+          "name": "dialogAction",
+          "description": "Actions close the `mwc-dialog` on click. You can define an action by slotting an element with the `dialogAction=\"...\"` string attribute. The name of the attribute can be customized by the `actionAttribute` property. When a clickable element with the `dialogAction` attribute is clicked, `mwc-dialog` will get the value of the attribute and fire the `closing` and subsequent `closed` events with a detail of `{action: <clickedElement.getAttribute('dialogAction')>}`.",
+          "doc-url": "https://github.com/material-components/material-web/tree/master/packages/dialog#actions",
+          "value": {
+            "type": "string",
+            "required": true
+          }
+        },
+        {
+          "name": "dialogInitialFocus",
+          "description": "`mwc-dialog` initial focus can be set on an element with the `dialogInitialFocus` boolean attribute (configurable via the `initialFocusAttribute` property of `mwc-dialog`.",
+          "doc-url": "https://github.com/material-components/material-web/tree/master/packages/dialog#actions",
+          "value": {
+            "type": "boolean",
+            "required": false
+          }
+        }
+      ]
+    },
+    "css": {
+      "properties": []
+    }
+  }
+}
