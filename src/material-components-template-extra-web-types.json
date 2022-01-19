@@ -15,7 +15,8 @@
           "value": {
             "type": "string",
             "required": true
-          }
+          },
+          "priority": "low"
         },
         {
           "name": "dialogInitialFocus",
@@ -24,7 +25,8 @@
           "value": {
             "type": "boolean",
             "required": false
-          }
+          },
+          "priority": "low"
         }
       ]
     },
