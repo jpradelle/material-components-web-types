@@ -1,7 +1,7 @@
 {
     "$schema": "http://json.schemastore.org/web-types",
     "name": "material-components-web-types",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "framework": "lit",
     "default-icon": "icon/material.png",
     "description-markup": "markdown",
