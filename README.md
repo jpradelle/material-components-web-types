@@ -7,7 +7,8 @@ libraries in the IDEs that support Web-Types.
 See [web-types](https://github.com/JetBrains/web-types) project
 
 # material-components-web-types
-`material-components-web-types` contains Web-Types definition of **Material Web** components like
+`material-components-web-types` contains Web-Types definition of
+[Material Web](https://github.com/material-components/material-web) components like
 `@material/mwc-button`, `@material/mwc-textfield` and so on.
 
 ## Getting started with lit
