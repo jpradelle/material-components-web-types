@@ -312,10 +312,10 @@ universalify@^0.1.2:
   resolved "https://registry.yarnpkg.com/universalify/-/universalify-0.1.2.tgz#b646f69be3942dabcecc9d6639c80dc105efaa66"
   integrity sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==
 
-web-component-analyzer-webtypes@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/web-component-analyzer-webtypes/-/web-component-analyzer-webtypes-2.0.2.tgz#8562d12fbdd473ab086292394499ca8a98929a99"
-  integrity sha512-rXize+il+cnuZxC2GVU/jL9j9Ws7hHXrdo4ypl01uRTlKt1GSw3Oek8RO3RG82v/pkTG/YAqnCB4temIMuIgmg==
+web-component-analyzer-webtypes@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/web-component-analyzer-webtypes/-/web-component-analyzer-webtypes-2.0.4.tgz#5de465d064b68986c3d66b7cb7867eaa777832b9"
+  integrity sha512-xLxBxDCzWuRCHjZJg/bSINz3Pj5pePayWpQ8IT6GAeCMXxMO6HKgOKGveptIldsr/sSBg3K/SALAnYynOHf+fA==
   dependencies:
     fast-glob "^3.2.2"
     ts-simple-type "2.0.0-next.0"

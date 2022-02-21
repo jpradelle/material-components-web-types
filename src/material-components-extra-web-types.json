@@ -1,10 +1,9 @@
 {
   "$schema": "http://json.schemastore.org/web-types",
   "name": "material-components-extra-web-types",
-  "version": "0.1.2",
+  "version": "0.1.0",
   "default-icon": "icon/material.png",
   "description-markup": "markdown",
-  "framework": "@polymer/polymer",
   "contributions": {
     "html": {
       "attributes": [
