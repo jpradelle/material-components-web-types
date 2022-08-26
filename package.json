@@ -16,13 +16,19 @@
   },
   "scripts": {
     "clone": "git clone https://github.com/material-components/material-web.git || (cd material-web && git pull)",
-    "web-types": "wca-webtypes 'material-web/packages/**/mwc-*.ts' --path-as-absolute --cwd material-web/packages --format webtypes --out-file ./src/gen/material-components-gen-web-types.json --webtypes-config='{\"name\": \"material-components-web-types\", \"version\": \"'$npm_package_version'\", \"default-icon\": \"icon/material.png\", \"description-markup\": \"markdown\"}'",
+    "web-types": "wca-webtypes 'material-web/packages/**/mwc-*.ts' --path-as-absolute --cwd material-web/packages --format webtypes --out-file ./src/gen/material-components-gen-web-types.json",
     "bump": "replace-json-property ./src/material-components-extra-web-types.json version $npm_package_version -s 2",
     "version": "npm run web-types && npm run bump && git add src/"
   },
   "devDependencies": {
     "replace-json-property": "^1.8.0",
-    "web-component-analyzer-webtypes": "^2.0.4"
+    "web-component-analyzer-webtypes": "^2.0.5"
+  },
+  "wca": {
+    "webtypesConfig": {
+      "default-icon": "icon/material.png",
+      "description-markup": "markdown"
+    }
   },
   "web-types": [
     "./src/gen/material-components-gen-web-types.json",
