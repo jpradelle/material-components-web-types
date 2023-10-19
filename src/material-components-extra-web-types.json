@@ -27,6 +27,237 @@
           },
           "priority": "low"
         }
+      ],
+      "elements": [
+        {
+          "name": "mwc-button",
+          "slots": [
+            {
+              "name": "",
+              "description": "Default content to display between both icons and after label. __NOTE:__ It is highly recommended to set the `label` property instead of projecting text as it will also set the `aria-label`"
+            },
+            {
+              "name": "trailingIcon",
+              "description": "Icon to show _after_ the label. Overrides `trailingIcon` property. Use `label` or the `trailingIcon` property to set the `aria-label`."
+            },
+            {
+              "name": "icon",
+              "description": "Leading icon. Overrides `icon` property. Use `label` or the `icon` property to set the `aria-label`."
+            }
+          ]
+        },
+        {
+          "name": "mwc-dialog",
+          "slots": [
+            {
+              "name": "",
+              "description": "Primary content area. May contain a list, a form, or prose."
+            },
+            {
+              "name": "primaryAction",
+              "description": "Footer area containing the dialog's primary action button."
+            },
+            {
+              "name": "secondaryAction",
+              "description": "Footer area containing the dialog's secondary action button."
+            }
+          ]
+        },
+        {
+          "name": "mwc-drawer",
+          "slots": [
+            {
+              "name": "title",
+              "description": "Header title to display in the drawer when `hasHeader` is true."
+            },
+            {
+              "name": "subtitle",
+              "description": "Header subtitle to display in the drawer when `hasHeader` is true."
+            },
+            {
+              "name": "header",
+              "description": "Additional header elements to display in the drawer."
+            },
+            {
+              "name": "appContent",
+              "description": "Elements to display in the \"app content\" to the right of, or under, the drawer."
+            },
+            {
+              "name": "",
+              "description": "Elements to display under the header in drawer."
+            }
+          ]
+        },
+        {
+          "name": "mwc-fab",
+          "slots": [
+            {
+              "name": "icon",
+              "description": "An icon to be slotted into the fab. _Note:_ the `label` property should still be set for button accessibility."
+            }
+          ]
+        },
+        {
+          "name": "mwc-formfield",
+          "slots": [
+            {
+              "name": "",
+              "description": "The input element that this form field provides a label for."
+            }
+          ]
+        },
+        {
+          "name": "mwc-icon",
+          "slots": [
+            {
+              "name": "",
+              "description": "The name of the icon to display (e.g. `shopping_cart`). See [Material Icons](https://material.io/resources/icons/) for an index of all available icons."
+            }
+          ]
+        },
+        {
+          "name": "mwc-icon-button",
+          "slots": [
+            {
+              "name": "",
+              "description": "Optional `<img>` or `<svg>` to display instead of using an icon font"
+            }
+          ]
+        },
+        {
+          "name": "mwc-icon-button-toggle",
+          "slots": [
+            {
+              "name": "onIcon",
+              "description": "Optional `<img>` or `<svg>` to display instead of using an icon font for the `onIcon` property."
+            },
+            {
+              "name": "offIcon",
+              "description": "Optional `<img>` or `<svg>` to display instead of using an icon font for the `offIcon` property."
+            }
+          ]
+        },
+        {
+          "name": "mwc-list",
+          "slots": [
+            {
+              "name": "",
+              "description": "Content to display in the lists internal `<ul>` element."
+            }
+          ]
+        },
+        {
+          "name": "mwc-list-item",
+          "slots": [
+            {
+              "name": "graphic",
+              "description": "First tile graphic to display when `graphic` attribute is defined."
+            },
+            {
+              "name": "meta",
+              "description": "Last tile meta icon or text to display when `hasMeta` is true."
+            },
+            {
+              "name": "secondary",
+              "description": "Secondary text displayed below primary text of a two-line list item."
+            },
+            {
+              "name": "",
+              "description": "Primary text to display in the list item. Note, text must be wrapped in an inline node to be styled for `disabled` variant."
+            }
+          ]
+        },
+        {
+          "name": "mwc-menu",
+          "slots": [
+            {
+              "name": "",
+              "description": "Content to display in the menus internal `<mwc-list>` element."
+            }
+          ]
+        },
+        {
+          "name": "mwc-select",
+          "slots": [
+            {
+              "name": "",
+              "description": "Content to display in the selects internal `<mwc-menu>` element."
+            }
+          ]
+        },
+        {
+          "name": "mwc-snackbar",
+          "slots": [
+            {
+              "name": "action",
+              "description": "Optional `<mwc-button>` which closes the snackbar with reason `'action'`."
+            },
+            {
+              "name": "dismiss",
+              "description": "Optional `<mwc-icon-button>` which closes the snackbar with reason `'dismiss'`."
+            }
+          ]
+        },
+        {
+          "name": "mwc-tab",
+          "slots": [
+            {
+              "name": "icon",
+              "description": "Slotted icon to display. Only available if `hasImageIcon` or `icon` are defined."
+            }
+          ]
+        },
+        {
+          "name": "mwc-tab-bar",
+          "slots": [
+            {
+              "name": "",
+              "description": "[`mwc-tab`](https://github.com/material-components/material-web/tree/master/packages/tab) elements to display."
+            }
+          ]
+        },
+        {
+          "name": "mwc-top-app-bar",
+          "slots": [
+            {
+              "name": "actionItems",
+              "description": "A number of `<mwc-icon-button>` elements to use for action icons on the right side. _NOTE:_ If using with `mwc-drawer`, please read note under [`Standard` drawer example](https://github.com/material-components/material-web/tree/master/packages/top-app-bar)."
+            },
+            {
+              "name": "navigationIcon",
+              "description": "One `<mwc-icon-button>` element to use for the left icon."
+            },
+            {
+              "name": "title",
+              "description": "A `<div>` or `<span>` that will be used as the title text."
+            },
+            {
+              "name": "",
+              "description": "Scrollable content to display under the bar. This may be the entire application."
+            }
+          ]
+        },
+        {
+          "name": "mwc-top-app-bar-fixed",
+          "slots": [
+            {
+              "name": "actionItems",
+              "description": "A number of `<mwc-icon-button>` elements to use for action icons on the right side. _NOTE:_ If using with `mwc-drawer`, please read note under [`Standard` drawer example](https://github.com/material-components/material-web/tree/master/packages/top-app-bar)."
+            },
+            {
+              "name": "navigationIcon",
+              "description": "One `<mwc-icon-button>` element to use for the left icon."
+            },
+            {
+              "name": "title",
+              "description": "A `<div>` or `<span>` that will be used as the title text."
+            },
+            {
+              "name": "",
+              "description": "Scrollable content to display under the bar. This may be the entire application."
+            }
+          ]
+        }
       ]
     },
     "css": {
