@@ -261,7 +261,48 @@
       ]
     },
     "css": {
-      "properties": []
+      "properties": [
+        {
+          "name": "--mdc-theme-primary",
+          "description": "The theme primary color."
+        },
+        {
+          "name": "--mdc-theme-secondary",
+          "description": "The theme secondary color."
+        },
+        {
+          "name": "--mdc-theme-surface",
+          "description": "The theme surface color."
+        },
+        {
+          "name": "--mdc-theme-background",
+          "description": "The theme background color."
+        },
+        {
+          "name": "--mdc-theme-on-primary",
+          "description": "Text and icons on top of a theme primary color background."
+        },
+        {
+          "name": "--mdc-theme-on-secondary",
+          "description": "Text and icons on top of a theme secondary color background."
+        },
+        {
+          "name": "--mdc-theme-on-surface",
+          "description": "Text and icons on top of a theme surface color background."
+        },
+        {
+          "name": "--mdc-shape-small",
+          "description": "Small rounded corner radius"
+        },
+        {
+          "name": "--mdc-shape-medium",
+          "description": "Medium rounded corner radius"
+        },
+        {
+          "name": "--mdc-shape-large",
+          "description": "Large rounded corner radius"
+        }
+      ]
     }
   }
 }

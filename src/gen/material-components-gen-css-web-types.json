@@ -1,0 +1,229 @@
+{
+  "$schema": "http://json.schemastore.org/web-types",
+  "name": "material-components-css-web-types",
+  "version": "0.0.0",
+  "default-icon": "icon/material.png",
+  "description-markup": "markdown",
+  "contributions": {
+    "css": {
+      "properties": [
+        {
+          "name": "--mdc-button-horizontal-padding",
+          "description": "Left and right padding of the button label (for outlined buttons the outline width is automatically subtracted)."
+        },
+        {
+          "name": "--mdc-button-outline-width",
+          "description": "`width` of the outline of an outlined button and attempts to keep the component size constant."
+        },
+        {
+          "name": "--mdc-button-outline-color",
+          "description": "Color of the outline of an outlined element."
+        },
+        {
+          "name": "--mdc-button-disabled-fill-color",
+          "description": "Background fill color of a disabled raised or unelevated button."
+        },
+        {
+          "name": "--mdc-button-disabled-ink-color",
+          "description": "Text color of a disabled button as well as the outline color of a disabled outlined button."
+        },
+        {
+          "name": "--mdc-button-disabled-outline-color",
+          "description": "Sets the color of the outline of a disabled outlined button."
+        },
+        {
+          "name": "--mdc-button-raised-box-shadow",
+          "description": "Sets the box shadow of the raised button."
+        },
+        {
+          "name": "--mdc-button-raised-box-shadow-hover",
+          "description": "Sets the box shadow of the raised button when focused or hovered."
+        },
+        {
+          "name": "--mdc-button-raised-box-shadow-focus",
+          "description": "Sets the box shadow of the raised button when focused. Note, if button is both focused and hovered, then hover will override focus box-shadow."
+        },
+        {
+          "name": "--mdc-button-raised-box-shadow-active",
+          "description": "Sets the box shadow of the raised button when active."
+        },
+        {
+          "name": "--mdc-button-raised-box-shadow-disabled",
+          "description": "Sets the box shadow of the raised button when disabled."
+        },
+        {
+          "name": "--mdc-linear-progress-buffer-color",
+          "description": "Sets the color of the buffer progress bar.<br> **NOTE:** to change the color of the buffering dots, you must do so in the image of `--mdc-linear-progress-buffering-dots-image`."
+        },
+        {
+          "name": "--mdc-linear-progress-buffering-dots-image",
+          "description": "Sets the image to use as the buffering dots. This pattern is then repeated horizontally and animated."
+        },
+        {
+          "name": "--mdc-radio-unchecked-color",
+          "description": "Color of the ring of an unchecked radio."
+        },
+        {
+          "name": "--mdc-radio-disabled-color",
+          "description": "Color of the ring and circle of a disabled radio."
+        },
+        {
+          "name": "--mdc-top-app-bar-fixed-box-shadow",
+          "description": "Sets the box shadow of the fixed top app bar when scrolling."
+        },
+        {
+          "name": "--mdc-top-app-bar-width",
+          "description": "Width of the `top-app-bar` in relation to the Window."
+        },
+        {
+          "name": "--mdc-snackbar-action-color",
+          "description": "Color of the action button text."
+        },
+        {
+          "name": "--mdc-top-app-bar-width",
+          "description": "Width of the `top-app-bar` in relation to the Window."
+        },
+        {
+          "name": "--mdc-icon-button-size",
+          "description": "Sets the size of the button wrapping the icon."
+        },
+        {
+          "name": "--mdc-text-area-filled-border-radius",
+          "description": "Border radius of the standard / filled textarea's background filling."
+        },
+        {
+          "name": "--mdc-text-area-outlined-idle-border-color",
+          "description": "Color of the outlined textarea's outline when idle."
+        },
+        {
+          "name": "--mdc-text-area-outlined-hover-border-color",
+          "description": "Color of the outlined textarea's outline when hovering."
+        },
+        {
+          "name": "--mdc-text-area-outlined-disabled-border-color",
+          "description": "Color of the outlined textarea's outline when disabled."
+        },
+        {
+          "name": "--mdc-theme-primary",
+          "description": "Color of a floating, slotted `FloatingLabel` and outline."
+        },
+        {
+          "name": "--mdc-shape-small",
+          "description": "Radius of the border."
+        },
+        {
+          "name": "--mdc-notched-outline-stroke-width",
+          "description": "Outline width."
+        },
+        {
+          "name": "--mdc-notched-outline-notch-offset",
+          "description": "Padding-top to apply to notch when open to compensate for border width box size"
+        },
+        {
+          "name": "--mdc-notched-outline-border-color",
+          "description": "Sets the border / outline color."
+        },
+        {
+          "name": "--mdc-text-field-filled-border-radius",
+          "description": "Border radius of the standard / filled textfield's background filling."
+        },
+        {
+          "name": "--mdc-text-field-idle-line-color",
+          "description": "Color of the filled textfield's bottom line when idle."
+        },
+        {
+          "name": "--mdc-text-field-hover-line-color",
+          "description": "Color of the filled textfield's bottom line when hovering."
+        },
+        {
+          "name": "--mdc-text-field-disabled-line-color",
+          "description": "Color of the filled textfield's bottom line when disabled."
+        },
+        {
+          "name": "--mdc-text-field-outlined-idle-border-color",
+          "description": "Color of the outlined textfield's outline when idle."
+        },
+        {
+          "name": "--mdc-text-field-outlined-hover-border-color",
+          "description": "Color of the outlined textfield's outline when hovering."
+        },
+        {
+          "name": "--mdc-text-field-outlined-disabled-border-color",
+          "description": "Color of the outlined textfield's outline when disabled."
+        },
+        {
+          "name": "--mdc-text-field-fill-color",
+          "description": "Color of the textfield's background fill (non-outlined)."
+        },
+        {
+          "name": "--mdc-text-field-disabled-fill-color",
+          "description": "Color of the textfield's background fill (non-outlined) when disabled."
+        },
+        {
+          "name": "--mdc-text-field-ink-color",
+          "description": "Color of the input text."
+        },
+        {
+          "name": "--mdc-text-field-label-ink-color",
+          "description": "Color of the non-focused floating label, helper text, char counter, and placeholder."
+        },
+        {
+          "name": "--mdc-text-field-disabled-ink-color",
+          "description": "Color of the input text, the floating label, helper text, char counter, and placeholder of a disabled textfield."
+        },
+        {
+          "name": "--mdc-drawer-width",
+          "description": "Width of the side drawer when opened."
+        },
+        {
+          "name": "--mdc-list-vertical-padding",
+          "description": "Padding before and after the first and last list items."
+        },
+        {
+          "name": "--mdc-list-side-padding",
+          "description": "Adjusts the padding of the `[padded]` list dividers (also propagates to `mwc-list-item`)."
+        },
+        {
+          "name": "--mdc-list-inset-margin",
+          "description": "Adjusts the left inset padding of an `[inset]` list divider. Typically used for dividing list items with icons."
+        },
+        {
+          "name": "--mdc-list-side-padding",
+          "description": "Side padding of the list item."
+        },
+        {
+          "name": "--mdc-list-item-meta-size",
+          "description": "Line height of the meta icon or text and width & height of the slotted parent wrapper."
+        },
+        {
+          "name": "--mdc-list-item-graphic-size",
+          "description": "Line height of the graphic and width & height of the slotted parent wrapper. `24px` when graphic is `\"icon\"`. `40px` when graphic is `\"avatar\"`. `56px` when graphic is `\"medium\"`, and `\"large\"`."
+        },
+        {
+          "name": "--mdc-list-item-graphic-margin",
+          "description": "Margin between the text and graphic. `16px` when graphic is `\"avatar\"`, `\"medium\"`, `\"large\"`, and `\"control\"`. `32px` when graphic is `\"icon\"`."
+        },
+        {
+          "name": "--mdc-menu-item-height",
+          "description": "Height of single-line list-items in the menu."
+        },
+        {
+          "name": "--mdc-menu-min-width",
+          "description": "Menu min-width."
+        },
+        {
+          "name": "--mdc-menu-max-width",
+          "description": "Menu max-width."
+        },
+        {
+          "name": "--mdc-menu-max-height",
+          "description": "Menu max-height."
+        },
+        {
+          "name": "--mdc-menu-z-index",
+          "description": "Z-index of the popup menu surface."
+        }
+      ]
+    }
+  }
+}

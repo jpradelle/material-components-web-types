@@ -17,8 +17,9 @@
   "scripts": {
     "clone": "git clone https://github.com/material-components/material-web.git || (cd material-web && git pull)",
     "web-types": "wca-webtypes 'material-web/packages/**/mwc-*.ts' --cwd material-web/packages --format webtypes --out-file ./src/gen/material-components-gen-web-types.json",
-    "bump": "replace-json-property ./src/material-components-extra-web-types.json version $npm_package_version -s 2",
-    "version": "npm run web-types && npm run bump && git add src/"
+    "web-types-css": "(cd parser && ./styleParser.sh)",
+    "bump": "replace-json-property ./src/material-components-extra-web-types.json version $npm_package_version -s 2 && replace-json-property ./src/gen/material-components-gen-css-web-types.json version $npm_package_version",
+    "version": "npm run web-types && npm run web-types-css && npm run bump && git add src/"
   },
   "devDependencies": {
     "replace-json-property": "^1.8.0",
@@ -33,6 +34,7 @@
   },
   "web-types": [
     "./src/gen/material-components-gen-web-types.json",
+    "./src/gen/material-components-gen-css-web-types.json",
     "./src/material-components-extra-web-types.json"
   ],
   "files": [
