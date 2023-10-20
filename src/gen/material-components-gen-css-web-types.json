@@ -1,12 +1,32 @@
 {
   "$schema": "http://json.schemastore.org/web-types",
   "name": "material-components-css-web-types",
-  "version": "0.2.3",
+  "version": "0.0.0",
   "default-icon": "icon/material.png",
   "description-markup": "markdown",
   "contributions": {
     "css": {
       "properties": [
+        {
+          "name": "--mdc-fab-box-shadow",
+          "description": "Sets the box shadow of the fab. Elevation 6 when idle, 8 when focused or hovered, and 12 when active."
+        },
+        {
+          "name": "--mdc-fab-extended-label-padding",
+          "description": "Sets the padding on either horizontal side of an extended fab."
+        },
+        {
+          "name": "--mdc-fab-extended-icon-padding",
+          "description": "Sets the padding between the icon and the label of an extended fab."
+        },
+        {
+          "name": "--mdc-fab-focus-outline-color",
+          "description": "The color of the focus outline ring (off by default)."
+        },
+        {
+          "name": "--mdc-fab-focus-outline-width",
+          "description": "Sets the width of the focus outline ring."
+        },
         {
           "name": "--mdc-button-horizontal-padding",
           "description": "Left and right padding of the button label (for outlined buttons the outline width is automatically subtracted)."
@@ -52,6 +72,90 @@
           "description": "Sets the box shadow of the raised button when disabled."
         },
         {
+          "name": "--mdc-tab-height",
+          "description": "Height of the tab."
+        },
+        {
+          "name": "--mdc-tab-horizontal-padding",
+          "description": "Horizontal padding on either side of the tab."
+        },
+        {
+          "name": "--mdc-tab-stacked-height",
+          "description": "Height of the tab's stacked variant."
+        },
+        {
+          "name": "--mdc-tab-text-label-color-default",
+          "description": "Color of an unactivated tab label."
+        },
+        {
+          "name": "--mdc-tab-color-default",
+          "description": "Color of an unactivated icon."
+        },
+        {
+          "name": "--mdc-select-error-color",
+          "description": "Applies where --mdc-theme-error applies."
+        },
+        {
+          "name": "--mdc-select-idle-line-color",
+          "description": "Color of the filled select's bottom line when idle."
+        },
+        {
+          "name": "--mdc-select-hover-line-color",
+          "description": "Color of the filled select's bottom line when hovering."
+        },
+        {
+          "name": "--mdc-select-outlined-idle-border-color",
+          "description": "Color of the outlined select's outline when idle."
+        },
+        {
+          "name": "--mdc-select-outlined-hover-border-color",
+          "description": "Color of the outlined select's outline when hovering."
+        },
+        {
+          "name": "--mdc-select-outlined-disabled-border-color",
+          "description": "Color of the outlined select's outline when disabled."
+        },
+        {
+          "name": "--mdc-select-fill-color",
+          "description": "Color of the select's background fill (non-outlined)."
+        },
+        {
+          "name": "--mdc-select-disabled-fill-color",
+          "description": "Color of the select's background fill (non-outlined) when disabled."
+        },
+        {
+          "name": "--mdc-select-ink-color",
+          "description": "Color of the selected text in default and error states."
+        },
+        {
+          "name": "--mdc-select-label-ink-color",
+          "description": "Color of the non-focused floating label, helper text, and placeholder."
+        },
+        {
+          "name": "--mdc-select-focused-label-color",
+          "description": "Color of the focused floating label, helper text, and placeholder."
+        },
+        {
+          "name": "--mdc-select-disabled-ink-color",
+          "description": "Color of the input text, the floating label, helper text, and placeholder of a disabled select."
+        },
+        {
+          "name": "--mdc-select-dropdown-icon-color",
+          "description": "Color of the dropdown icon when select is not activated."
+        },
+        {
+          "name": "--mdc-select-focused-dropdown-icon-color",
+          "description": "Color of the dropdown icon when select is activated."
+        },
+        {
+          "name": "--mdc-select-disabled-dropdown-icon-color",
+          "description": "Opacity of the dropdown icon when disabled."
+        },
+        {
+          "name": "--mdc-select-error-dropdown-icon-color",
+          "description": "Color of the dropdown icon when select is invalid."
+        },
+        {
           "name": "--mdc-linear-progress-buffer-color",
           "description": "Sets the color of the buffer progress bar.<br> **NOTE:** to change the color of the buffering dots, you must do so in the image of `--mdc-linear-progress-buffering-dots-image`."
         },
@@ -66,6 +170,70 @@
         {
           "name": "--mdc-radio-disabled-color",
           "description": "Color of the ring and circle of a disabled radio."
+        },
+        {
+          "name": "--mdc-dialog-scrim-color",
+          "description": "Color of the scrim. (**Note:** setting alpha to 0 will still make scrim clickable but transparent)."
+        },
+        {
+          "name": "--mdc-dialog-heading-ink-color",
+          "description": "Color of the heading text."
+        },
+        {
+          "name": "--mdc-dialog-content-ink-color",
+          "description": "Color applied to the projected content. (**Note:** it may also be possible to style the content via the light DOM since it is not encapsulated in a shadow root)."
+        },
+        {
+          "name": "--mdc-dialog-scroll-divider-color",
+          "description": "Color of the dividers present when dialog is scrollable."
+        },
+        {
+          "name": "--mdc-dialog-min-width",
+          "description": "min-width ofthe dialog surface."
+        },
+        {
+          "name": "--mdc-dialog-max-width",
+          "description": "max-width of the dialog surface. (**Note:** if max-width is < `560px`, there is a visual jank bug that will occur causing the max width to be `560px` when the window is sized to <= than `560px`)."
+        },
+        {
+          "name": "--mdc-dialog-max-height",
+          "description": "Max height of the dialog surface."
+        },
+        {
+          "name": "--mdc-dialog-box-shadow",
+          "description": "Sets the box shadow of the dialog."
+        },
+        {
+          "name": "--mdc-dialog-z-index",
+          "description": "Sets the `z-index` of the dialog and scrim."
+        },
+        {
+          "name": "--mdc-ripple-color",
+          "description": "Color of the ripple will have when activated."
+        },
+        {
+          "name": "--mdc-ripple-press-opacity",
+          "description": "Opacity of the ripple when pressed."
+        },
+        {
+          "name": "--mdc-ripple-hover-opacity",
+          "description": "Opacity of the ripple when hovered."
+        },
+        {
+          "name": "--mdc-ripple-focus-opacity",
+          "description": "Opacity of the ripple when focused."
+        },
+        {
+          "name": "--mdc-ripple-selected-opacity",
+          "description": "Opacity of the ripple when the host component is \"selected\". This opacity is added to `press`, `hover`, and `focus` states."
+        },
+        {
+          "name": "--mdc-ripple-activated-opacity",
+          "description": "Opacity of the ripple when the host component is \"activated\". This opacity is added to `press`, `hover`, and `focus` states."
+        },
+        {
+          "name": "--mdc-ripple-z-index",
+          "description": "Z-index of the ripple."
         },
         {
           "name": "--mdc-top-app-bar-fixed-box-shadow",
@@ -84,8 +252,20 @@
           "description": "Width of the `top-app-bar` in relation to the Window."
         },
         {
+          "name": "--mdc-circular-progress-track-color",
+          "description": "Sets the track color of the determinate progress bar."
+        },
+        {
           "name": "--mdc-icon-button-size",
           "description": "Sets the size of the button wrapping the icon."
+        },
+        {
+          "name": "--mdc-icon-font",
+          "description": "Font that supports *ligatures* and determines which icons are available (see [fonts](#fonts) above)."
+        },
+        {
+          "name": "--mdc-icon-size",
+          "description": "Size of the icon."
         },
         {
           "name": "--mdc-text-area-filled-border-radius",
@@ -102,6 +282,34 @@
         {
           "name": "--mdc-text-area-outlined-disabled-border-color",
           "description": "Color of the outlined textarea's outline when disabled."
+        },
+        {
+          "name": "--mdc-elevation-overlay-opacity",
+          "description": "Opacity of the overlay."
+        },
+        {
+          "name": "--mdc-elevation-overlay-fill-color",
+          "description": "Fill color of the overlay."
+        },
+        {
+          "name": "--mdc-elevation-overlay-width",
+          "description": "Width of the overlay (`absolute` positioning may need to be set as well e.g. `.mdc-elevation-overlay {--mdc-elevation-overlay-width: 50%; left: 50%;}`)."
+        },
+        {
+          "name": "--mdc-elevation-overlay-height",
+          "description": "Height of the overlay (`absolute` positioning may need to be set as well e.g. `.mdc-elevation-overlay {--mdc-elevation-overlay-height: 50%; top: 50%;}`)."
+        },
+        {
+          "name": "--mdc-checkbox-ink-color",
+          "description": "Color of mark inside a `checked` or `indeterminate` checkbox (enabled or disabled)."
+        },
+        {
+          "name": "--mdc-checkbox-unchecked-color",
+          "description": "Color of the unchecked box."
+        },
+        {
+          "name": "--mdc-checkbox-disabled-color",
+          "description": "Color of the checkbox box and fill when disabled."
         },
         {
           "name": "--mdc-theme-primary",
@@ -222,6 +430,26 @@
         {
           "name": "--mdc-menu-z-index",
           "description": "Z-index of the popup menu surface."
+        },
+        {
+          "name": "--mdc-circular-progress-bar-color-1",
+          "description": "Sets the first of the four rotating colors."
+        },
+        {
+          "name": "--mdc-circular-progress-bar-color-2",
+          "description": "Sets the second of the four rotating colors."
+        },
+        {
+          "name": "--mdc-circular-progress-bar-color-3",
+          "description": "Sets the third of the four rotating colors."
+        },
+        {
+          "name": "--mdc-circular-progress-bar-color-4",
+          "description": "Sets the last of the four rotating colors."
+        },
+        {
+          "name": "--mdc-circular-progress-track-color",
+          "description": "Sets the track color of the determinate progress bar."
         }
       ]
     }

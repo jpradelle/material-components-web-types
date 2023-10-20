@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cssBuild=""
-mdCssValues=$(grep -rhE "^\| \`\-\-.*\|.*\|" --include="README.md" ../material-web/)
+mdCssValues=$(grep -rhE "^(\| )?\`\-\-.*\|.*\|" --include="README.md" ../material-web/)
 IFS=$'\n'
 for cssValue in $mdCssValues
 do
@@ -10,14 +10,14 @@ do
     echo "$cssValue" \
         | sed -E 's/  / /g' \
         | sed -E 's/!\[\]\(images\/color_([0-9a-f]{6,8}|([0-9]{1,3},){2,3}[0-9]{1,3})\.png\) //g' \
-        | sed -E 's/(^\| `)(--[^`]+)` *\| ([^\|]*) *\| (.*)/\2\n\3\n\4/'
+        | sed -E 's/((^\| )?`)(--[^`]+)` *\| ([^\|]*) *\| (.*)/\3\n\4\n\5/'
   )
   if [[ $(echo "$parsed" | wc -l) == 3 ]]
   then
     name=$(echo "$parsed" | head -n 1)
     value=$(echo "$parsed" | head -n 2 | tail -n 1 | sed -E 's/ *$//' | sed -E 's/`//g')
     description=$(echo "$parsed" | tail -n 1)
-    echo "$name;$value;$description"
+    echo "$name ; $value ; $description"
     join=""
     if [[ "$cssBuild" != "" ]]
     then
